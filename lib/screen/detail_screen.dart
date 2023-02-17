@@ -279,11 +279,9 @@ class DetailScreen extends StatelessWidget {
                                   'Jln. Kappan Sukses No. 20\nKec.Cikarang Barat, Kab. Bekasi',
                                   style: secondaryText,
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 IconButton(
-                                    onPressed: () {
-                                      'https://goo.gl/maps/PHjq32PFtLBqB1rP9';
-                                    },
+                                    onPressed: () {},
                                     icon: Image.asset(
                                       'assets/btn_map.png',
                                     )),

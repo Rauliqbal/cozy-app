@@ -610,6 +610,89 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: Container(
+        height: 65,
+        width: MediaQuery.of(context).size.width - (2 * 24),
+        margin: const EdgeInsets.symmetric(horizontal: 24),
+        decoration: BoxDecoration(
+            color: const Color(0xffF6F7F8),
+            borderRadius: BorderRadius.circular(22)),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Column(
+              children: [
+                const Spacer(),
+                Image.asset(
+                  'assets/icon_home.png',
+                  width: 24,
+                ),
+                const Spacer(),
+                Container(
+                  width: 30,
+                  height: 4,
+                  decoration: BoxDecoration(
+                      color: primary,
+                      borderRadius: const BorderRadius.vertical(
+                          top: Radius.circular(1000))),
+                )
+              ],
+            ),
+            Column(
+              children: [
+                const Spacer(),
+                Image.asset(
+                  'assets/icon_email.png',
+                  width: 24,
+                ),
+                const Spacer(),
+                Container(
+                  width: 30,
+                  height: 4,
+                  decoration: const BoxDecoration(
+                      borderRadius:
+                          BorderRadius.vertical(top: Radius.circular(1000))),
+                )
+              ],
+            ),
+            Column(
+              children: [
+                const Spacer(),
+                Image.asset(
+                  'assets/icon_card.png',
+                  width: 24,
+                ),
+                const Spacer(),
+                Container(
+                  width: 30,
+                  height: 4,
+                  decoration: const BoxDecoration(
+                      borderRadius:
+                          BorderRadius.vertical(top: Radius.circular(1000))),
+                )
+              ],
+            ),
+            Column(
+              children: [
+                const Spacer(),
+                Image.asset(
+                  'assets/icon_love.png',
+                  width: 24,
+                ),
+                const Spacer(),
+                Container(
+                  width: 30,
+                  height: 4,
+                  decoration: const BoxDecoration(
+                      borderRadius:
+                          BorderRadius.vertical(top: Radius.circular(1000))),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
